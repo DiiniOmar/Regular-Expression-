@@ -1,0 +1,12 @@
+import re
+gd="Python is an oop lang.Python is also fun prog lang"
+sp="Python"
+matres=re.search(sp,gd) # Here matres--->object--->a) Match class object    b) NoneType
+if(matres!=None):
+	print("Search is Sucessful")
+	print("Start Index:{}".format(matres.start()))
+	print("End Index:{}".format(matres.end()))
+	print("Matched Value:{}".format(matres.group()))
+else:
+	print("Search is Not Sucessful")
+	print("{} is not Found".format(sp))
